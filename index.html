@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Who is She?</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to top right, #ffe6f0, #fff0f5, #ffffff);
+            color: #4a2c3a;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.85);
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(255, 182, 193, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            color: #ff4d88;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #cc6699;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.9;
+            font-size: 18px;
+            white-space: pre-line;
+        }
+
+        .highlight {
+            text-align: center;
+            margin: 20px 0;
+            font-style: italic;
+            color: #ff6699;
+        }
+
+        .ending {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 20px;
+            color: #ff4d88;
+        }
+
+        /* soft floating hearts */
+        .heart {
+            position: fixed;
+            color: #ff99bb;
+            animation: float 10s linear infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(100vh);
+            }
+            to {
+                transform: translateY(-10vh);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Who is She?</h1>
+<div class="subtitle">A Dream… A Dance… A Love</div>
+
+<p>
+I don’t know where I am. I have never seen this place before in my life, yet it feels like I belong here. There are so many people around me, and I am standing alone at the center of it all. The people around me are dancing with their partners. It looks so beautiful—everyone is dancing with their loved ones.
+
+I feel joy just by watching. It’s so romantic.
+
+Then, a girl in a white fairytale dress slowly approaches me. By the time I notice her, she is already standing right in front of me. I have no idea who she is or who she might be. I hesitate to look at her and try to avoid her by looking around. But before I can do that, a miracle happens.
+
+She invites me to dance.
+</p>
+
+<div class="highlight">“Did she really just talk to me?”</div>
+
+<p>
+Without wasting a second, I accept her offer and take her hand in mine.
+
+We begin to dance, just like the others. My heart is filled with overwhelming happiness. Watching someone dance is beautiful, but dancing with someone is magical. Yet, while I’m dancing, a question keeps troubling me: “Who is she?” The reason it troubles me is that I cannot see her face.
+
+I want to ask, “Who are you?” but her smile leaves me speechless. Slowly, the people around us begin to disappear. I refuse to look away, because I am looking at the most beautiful thing in the world—her eyes.
+
+My heartbeat rises with every step we take. The place becomes even more romantic, as now there are only two people here—me and her. As my heart grows lighter, my head feels heavier.
+</p>
+
+<div class="highlight">
+“Who is she?”<br>
+“Why did she ask me to dance?”<br>
+“Why can’t I see her face?”
+</div>
+
+<p>
+In this battle within myself, I choose to keep dancing with this beauty for eternity. There is no need to find answers as long as this princess is with me, even if I cannot recognize her face.
+
+Her presence says, stay with me.<br>
+Her eyes say, be with me.<br>
+Her lips say, come closer to me.
+
+I stay because I accept her presence. I remain because I admire her beauty. I move closer because I love her.
+
+We stop dancing to close the distance between us. There are no more questions—only one desire: to kiss her.
+
+In a moment, I pull her closer. We stand so near that our heartbeats feel like one. Our lips draw closer, ready to fulfill that desire. Just as I lean in to kiss her, another miracle happens.
+
+I finally recognize her face.
+</p>
+
+<div class="ending">
+She is the fairytale that I wish.<br>
+She is the partner that I desire.<br>
+She is the beauty that I admire.<br>
+She is the girl that I love.<br><br>
+
+She is none other than the princess of the godious nation called imagination.<br><br>
+
+This is the place where I daily meet her… and it’s my dream.
+</div>
+
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (12 + Math.random() * 18) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 10000);
+}
+
+setInterval(createHeart, 600);
+</script>
+
+</body>
+</html>
